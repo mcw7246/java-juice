@@ -1,0 +1,232 @@
+/*
+    FILE:    style.css
+    DESC:    Styling for the Java Juice landing page.
+    AUTHOR:  Kevin J. Becker 
+    VERSION: 02/10/2019
+*/
+
+/*   GLOBAL STYLING   */
+/* content will be written with Open Sans typeface */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,500|Catamaran:500,800');
+
+/* general styling for the body */
+body {
+    background: #eff1f7;
+    margin-bottom: 0;
+    overflow-x: hidden;
+}
+
+/* any timed transision will use ease-in-out function */
+* {
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+/* removes default css outlines for inputs  */
+*:focus, *:invalid {
+    outline: none;
+}
+
+/*   END GLOBAL STYLING - BEGIN BODY   */
+
+/* the content class is used to delineate the header from
+   the content of the page */
+.content {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    /* background: white; */
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*   END BODY CONTAINER STYLING -- BODY HEADER STYLING   */
+
+#header {
+    background: #eb5e55;
+    color: #fff;
+    text-align: center;
+    font-family: 'Catamaran', Helvetica, Arial, sans-serif;
+    padding: 0 15px 60px;
+    line-height: 3.5rem;
+    position: relative;
+}
+
+.brand-header-img {
+    display: block;
+    margin: 0 auto;
+    width: 18rem;
+    max-width: 100%;
+    padding: 30px 0;
+}
+
+.brand-tag {
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+    font-weight: 800;
+    font-size: 4rem;
+    padding: 2rem 0 4rem;
+}
+
+.prompt {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 15px;
+}
+
+.input-row input {
+    width: calc(100% - 60px);
+    max-width: 400px;
+    margin-right: 10px;
+    padding: .8rem;
+    border-radius: .25rem;
+    border: none;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    background: #f9f9f9;
+    color: #0c0201;
+    transition: box-shadow .3s ease-out;
+}
+
+.input-row button {
+    padding: .8rem;
+    border-radius: .25rem;
+    border: none;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    background-color: #686262;
+    color: #f9f9f9;
+    transition: background-color .3s ease-out, box-shadow .3s ease-out;
+}
+
+.input-row input, .input-row button {
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+}
+
+.input-row input:focus, .input-row button:hover {
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.45);
+}
+
+.input-row button:hover {
+    background-color: #535252;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .brand-tag {
+        font-size: 3rem;
+        padding-bottom: 3rem;
+        width: 100%;
+    }
+
+    .prompt {
+        font-size: 1.5rem;
+    }
+
+    .input-row {
+        font-size: 1rem;
+    }
+
+    .input-row input {
+        margin: 0 auto 15px;
+    }
+
+    .input-row button {
+        display: block;
+        width: calc(100% - 30px);
+        max-width: 200px;
+        margin: 0 auto 15px;
+    }
+}
+
+.transition-ripple {
+    display: block;
+    background: url("../images/ripple.svg") center repeat-x;
+    width: 100%;
+    min-width: 400px;
+    overflow: hidden;
+    height: 100px;
+    z-index: 0;
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+
+/* ENDS THE HEADER -- BEGINS THE MAIN CONTENT */
+
+#main {
+    color: #535252;
+    margin-bottom: 45px;
+}
+
+/* styles links in the main content */
+#main a {
+    color: #444444;
+    font-weight: bolder;
+}
+
+#main a:active {
+    color: #111111;
+}
+
+/* cards are used to display different information about the features of
+   Java Juice */
+.feature-cards {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.feature-cards-heading {
+    text-align: center;
+    font-size: 2.75rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.card {
+    width: 29%;
+    display: inline-block;
+    margin: 2%;
+    vertical-align: top;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+}
+
+.card-content {
+    text-align: justify;
+}
+
+/* makes the cards become single-line entities after a certain screen size
+   is hit */
+@media screen and (max-width: 1125px) {
+    .card {
+        width: 100%;
+        clear: both;
+    }
+
+    .card-content {
+        text-align: left;
+    }
+}
+
+/* END MAIN BODY STYLING -- BEGIN FOOTER */
+
+#footer {
+    background: #1f1f1f;
+    color: #f9f9f9;
+    padding: 30px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+@media screen and (max-width: 500px) {
+    .text-center-sm {
+        text-align: center !important;
+    }
+}
