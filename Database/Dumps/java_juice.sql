@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 28, 2019 at 09:54 AM
+-- Generation Time: Mar 28, 2019 at 07:12 PM
 -- Server version: 5.5.60-MariaDB
 -- PHP Version: 7.1.24
 
@@ -25,7 +25,30 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `java_juic_login`
+-- Table structure for table `java_juice_exContent`
+--
+
+CREATE TABLE `java_juice_exContent` (
+  `exNumber` int(2) NOT NULL,
+  `content` longtext COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `java_juice_exQuestions`
+--
+
+CREATE TABLE `java_juice_exQuestions` (
+  `id` int(11) NOT NULL,
+  `question` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `answer` varchar(30) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `java_juice_login`
 --
 
 CREATE TABLE `java_juice_login` (
@@ -39,7 +62,13 @@ CREATE TABLE `java_juice_login` (
 --
 
 --
--- Indexes for table `couponLogin240`
+-- Indexes for table `java_juice_exQuestions`
+--
+ALTER TABLE `java_juice_exQuestions`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `java_juice_login`
 --
 ALTER TABLE `java_juice_login`
   ADD PRIMARY KEY (`id`);
@@ -49,7 +78,12 @@ ALTER TABLE `java_juice_login`
 --
 
 --
--- AUTO_INCREMENT for table `couponLogin240`
+-- AUTO_INCREMENT for table `java_juice_exQuestions`
+--
+ALTER TABLE `java_juice_exQuestions`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `java_juice_login`
 --
 ALTER TABLE `java_juice_login`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;COMMIT;
