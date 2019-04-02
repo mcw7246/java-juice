@@ -5,18 +5,25 @@
     VERSION: 02/10/2019
 */
 
+
 /*   GLOBAL STYLING   */
+
+
 /* content will be written with Open Sans typeface */
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,500|Catamaran:500,800');
 
 /* general styling for the body */
+
 body {
     background: #eff1f7;
     margin-bottom: 0;
     overflow-x: hidden;
 }
 
+
 /* any timed transision will use ease-in-out function */
+
 * {
     padding: 0;
     margin: 0;
@@ -24,21 +31,28 @@ body {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
+
 /* removes default css outlines for inputs  */
-*:focus, *:invalid {
+
+*:focus,
+*:invalid {
     outline: none;
 }
 
+
 /*   END GLOBAL STYLING - BEGIN BODY   */
+
 
 /* the content class is used to delineate the header from
    the content of the page */
+
 .content {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     /* background: white; */
     margin: 0 auto;
     width: 100%;
 }
+
 
 /*   END BODY CONTAINER STYLING -- BODY HEADER STYLING   */
 
@@ -100,12 +114,14 @@ body {
     transition: background-color .3s ease-out, box-shadow .3s ease-out;
 }
 
-.input-row input, .input-row button {
-    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+.input-row input,
+.input-row button {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
-.input-row input:focus, .input-row button:hover {
-    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.45);
+.input-row input:focus,
+.input-row button:hover {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.45);
 }
 
 .input-row button:hover {
@@ -119,19 +135,15 @@ body {
         padding-bottom: 3rem;
         width: 100%;
     }
-
     .prompt {
         font-size: 1.5rem;
     }
-
     .input-row {
         font-size: 1rem;
     }
-
     .input-row input {
         margin: 0 auto 15px;
     }
-
     .input-row button {
         display: block;
         width: calc(100% - 30px);
@@ -152,6 +164,7 @@ body {
     margin-bottom: 30px;
 }
 
+
 /* ENDS THE HEADER -- BEGINS THE MAIN CONTENT */
 
 #main {
@@ -159,7 +172,9 @@ body {
     margin-bottom: 45px;
 }
 
+
 /* styles links in the main content */
+
 #main a {
     color: #444444;
     font-weight: bolder;
@@ -169,8 +184,10 @@ body {
     color: #111111;
 }
 
+
 /* cards are used to display different information about the features of
    Java Juice */
+
 .feature-cards {
     width: 75%;
     margin: 0 auto;
@@ -200,18 +217,20 @@ body {
     text-align: justify;
 }
 
+
 /* makes the cards become single-line entities after a certain screen size
    is hit */
+
 @media screen and (max-width: 1125px) {
     .card {
         width: 100%;
         clear: both;
     }
-
     .card-content {
         text-align: left;
     }
 }
+
 
 /* END MAIN BODY STYLING -- BEGIN FOOTER */
 
