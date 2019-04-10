@@ -1,8 +1,8 @@
 <!-- 
-FILE: types-ex.html
-DESC:  Excersie pages
+FILE: types-ex.php
+DESC:  Types page
 AUTHOR: Lucas Kohorst
-VERSION: 03/2/2019 
+VERSION: 04/9/2019 
 -->
 
 <?php
