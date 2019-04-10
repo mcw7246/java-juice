@@ -48,6 +48,10 @@
     float: left;
 }
 
+.topnav .icon {
+    display: none;
+}
+
 
 /* Applying styles to the list items */
 
@@ -87,7 +91,7 @@
 /* Styles for the vetical nav bar */
 
 .navigation-vertical {
-    width: 30%;
+    width: 35%;
     overflow: hidden;
 }
 
@@ -147,4 +151,23 @@ pre {
     text-align: center;
     background-color: #333;
     color: white;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 900px) {
+    .navigation-vertical {
+        display: none;
+    }
+    #main {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #header li {
+        display: none;
+    }
 }
